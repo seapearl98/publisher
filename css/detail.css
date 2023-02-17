@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto+Serif:opsz,wght@8..144,700&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url(reset.css);
+
+
+/* roboto */
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Flex', sans-serif;
+font-family: 'Roboto Serif', serif;
+font-family: 'Roboto Slab', serif;
+*/
+/* notosans kr */
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* body{
+    width: 100%; height: 100vh;
+    background: #2165F5;
+    color: #fff;
+    position: relative;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.detailpage{
+    box-sizing: border-box;
+    border: 1px solid #000;
+    width: 100%; height: 100vh;
+    background: #2165F5;}
+.detailpage>.container{
+    position: absolute;
+    border: 1px solid #000;
+    width: 100%;
+    height: 100vh;
+}
+.detailpage>.container>.detailview{
+    display: inline-block;
+    font-size: 120px;
+    font-family: 'Roboto Serif', serif;
+    text-shadow: 3px 1px 0px #FFF280, 0 0 0 #000, 3px 1px 0px #FFF280;
+    box-shadow: 15px 15px 0 rgba(0,0,0,0.25);
+    font-weight: bold;
+    background: #FFF280;
+    color: rgba(0, 66, 199, 0.896);
+    padding: 10px;
+}
+.detailpage>.container>.refresh i{
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 800;
+    color: #99BCFF;
+    vertical-align: bottom;
+    text-shadow: 3px 3px 0px #000;
+}
+
+.detailpage>.container>.leftbox{
+    position: absolute;
+    border: 1px solid #000;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 7%;
+    width: 25%;
+    height: 60%;
+    box-sizing: border-box;
+}
+.detailpage>.container>.leftbox>span{
+    font-size: 120px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #99BCFF;
+}
+.detailpage>.container>.leftbox>span:nth-of-type(1){}
+.detailpage>.container>.leftbox>span:nth-of-type(2){}
+.detailpage>.container>.textbox{
+    color: #fff;
+}
+
+.detailpage>.container>.rightbox{
+    width: 35%; height: 50%;
+    position: absolute;
+    right: 250px; top: 30%;
+    background: #FFF280;}
+.detailpage>.container>.rightbox>.imagebox{
+    width: 35%;
+    height: 55%;
+    position: relative;
+    display: inline-block;
+    box-shadow: -20px 20px 4px rgba(0,0,0,0.25);}
+.detailpage>.container>.rightbox>.image1{}
+.detailpage>.container>.rightbox>.image1>img{width: 600px;}
+.detailpage>.container>.rightbox>.image2{width: 20px; border: 1px solid #000;}
+.detailpage>.container>.rightbox>.image2>img{width: 100%;}
+.detailpage>.container>.rightbox>.image3{}
+.detailpage>.container>.rightbox>.image3>img{border: 1px solid #000;} */
+
+body{
+    width: 100%; height: 100vh;
+    background: #2165F5;
+    overflow: hidden;
+}
+
+.detailpage{
+    width: 100%; height: 100vh;
+    background: #2165F5;}
+.detailpage>.container{
+    position: relative;
+    border: 1px solid #000;
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.detailpage>.container>.detailview{
+    z-index: 1;
+    display: inline-block;
+    font-size: 120px;
+    font-family: 'Roboto Serif', serif;
+    text-shadow: 3px 1px 0px #FFF280, 0 0 0 #000, 3px 1px 0px #FFF280;
+    box-shadow: 15px 15px 0 rgba(0,0,0,0.25);
+    font-weight: bold;
+    background: #FFF280;
+    color: rgba(0, 66, 199, 0.896);
+    padding: 10px;
+}
+.detailpage>.container>.refresh a{
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 800;
+    color: #99BCFF;
+    vertical-align: bottom;
+    text-shadow: 3px 3px 0px #000;
+}
+
+.detailpage>.container>.leftbox{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 7%;
+    width: 25%;
+    height: 60%;
+    box-sizing: border-box;
+    animation: left-to-right 1.2s ease 1;
+}
+
+@keyframes left-to-right {
+    0%{left: -100%;}
+    70%{left: 15%;}
+    100%{left: 7%;}
+}
+
+.detailpage>.container>.leftbox>span{
+    font-size: 120px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fcff99;
+    line-height: 0.9;
+    font-style: italic;
+    padding-top: 60px;
+}
+.detailpage>.container>.leftbox>span:nth-of-type(1){
+    font-size: 100px;
+    position: absolute; left: -10%; top: 0;}
+.detailpage>.container>.leftbox>span:nth-of-type(2){
+    position: absolute; 
+    right: 0; top: 20%; 
+    border-bottom: 5px solid #fcff99;
+    font-style: italic;
+    padding-top: 40px;
+}
+.detailpage>.container>.leftbox>.textbox{
+    position: absolute;
+    top: 58%;
+    color: #fff;
+}
+.detailpage>.container>.leftbox>.textbox>h3{
+    font-size: 46px;
+    text-indent: 15px;
+    font-weight: bold;
+    color: #aaf5ff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    line-height: 46px;
+    border-left: 5px solid #aaf5ff;
+}
+.detailpage>.container>.leftbox>.textbox>p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+}
+strong{
+    font-size: 22px;
+    color: #fff280;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.detailpage>.container>.rightbox{
+    width: 35%; height: 50%;
+    position: absolute;
+    right: 250px; top: 30%;
+    background: #FFF280;}
+.detailpage>.container>.rightbox>.imagebox{
+    width: 35%;
+    height: 55%;
+    position: relative;
+    display: inline-block;
+    box-shadow: -20px 20px 4px rgba(0,0,0,0.2);
+    animation: image-crop   1s ease 1;
+}
+
+@keyframes image-crop {
+    0%{transform: scale(0.1);}
+    100%{transform: scale(1);}
+}
+
+.detailpage>.container>.rightbox>.imagebox>.image1{
+    z-index: 1; 
+    position: absolute;
+    left: 50px; top: 350px;
+    box-shadow: 40px 40px 0px rgba(0,0,0,0.2);
+}
+.detailpage>.container>.rightbox>.imagebox>.image1>img{width: 800px;}
+.detailpage>.container>.rightbox>.imagebox>.image2{
+    z-index: 1; 
+    position: absolute;
+    left: 280px; top: -50px;
+    box-shadow: -60px 60px 0px rgba(0,0,0,0.2);
+}
+.detailpage>.container>.rightbox>.imagebox>.image2>img{width: 600px;}
+.detailpage>.container>.rightbox>.imagebox>.image3{
+    z-index: 1; position: absolute; left: -200px; top: -180px;
+    box-shadow: 40px 40px 0px rgba(0,0,0,0.2);
+}
+.detailpage>.container>.rightbox>.imagebox>.image3>img{width: 450px;}
+
+.detailpage>.container>.rightbox>.imagebox>div>span{
+    z-index: 10;
+    display: block;
+    position: absolute;
+    font-size: 30px;
+}
+.detailpage>.container>.rightbox>.imagebox>div>span>i{
+    z-index: 100;
+    font-size: 30px;
+}
+
